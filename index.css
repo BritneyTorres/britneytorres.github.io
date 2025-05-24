@@ -1,0 +1,200 @@
+body {
+    background-color: #fbe7f0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3em;
+    color: #4a3f63;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #4a3f63;
+}
+
+h3,
+h4 {
+    font-size: 2.5em;
+    color: #4a3f63;
+}
+
+p {
+    font-size: 1.5em;
+    color: #4a3f63;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 2px solid #c3aed6;
+    box-shadow: 2px 2px 10px rgba(163, 113, 179, 0.3);
+    color: #4a3f63;
+    background-color: #f7cde2;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #c3aed6;
+    color: white;
+}
+
+/* NAV y HEADER */
+header {
+    background-color: #c3aed6;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 2.6em;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+header a:hover {
+    color: #f7cde2;
+}
+
+/* SECCIÓN YO */
+#YO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 80vh;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(105, 73, 131, 0.6), rgba(105, 73, 131, 0.6)), url("img/FONDO.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#YO h1 {
+    color: white;
+}
+
+/* QUIÉN SOY */
+#Quien-soy .container {
+    height: 80vh;
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* HOBBIES */
+#Mis-Hobbies {
+    height: 80vh;
+    background-color: #f7cde2;
+}
+
+#Mis-Hobbies .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* HABILIDADES */
+#Mis-Habilidades {
+    height: 130vh;
+    background-color: #c3aed6;
+}
+
+#Mis-Habilidades p {
+    display: none;
+}
+
+#Mis-Habilidades .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* CARTAS */
+#Mis-Habilidades .carta {
+    background: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg, rgba(75, 50, 105, 0.5), rgba(75, 50, 105, 0.5)), url("img/CCNA.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(75, 50, 105, 0.5), rgba(75, 50, 105, 0.5)), url("img/IT.jpg");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(75, 50, 105, 0.5), rgba(75, 50, 105, 0.5)), url("img/PYTHON.png");
+}
+
+/* FOOTER */
+footer {
+    background-color: #a18bc3;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    background-color: #a18bc3;
+}
+
+footer .container {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* RESPONSIVE */
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0%;
+        padding-right: 15px;
+    }
+}
